@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Ifood-Bold";
+  src: url(./fonte/iFoodRCTextos-Bold.b503618f0e978a5e2483.woff2);
+}
+@font-face {
+  font-family: "Ifood-Regular";
+  src: url(./fonte/iFoodRCTextos-Regular.699e45aed18e77d18e41.woff2);
+}
+@font-face {
+  font-family: "Ifood-Bold-2";
+  src: url(./fonte/iFoodRCTitulos-Bold.woff2);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Ifood-Regular, sans-serif;
+}
+p,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.imagem-main img {
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  max-width: 100%;
+}
+.imagem-formulario {
+  align-self: center;
+}
+.imagem-formulario img {
+  width: 150px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 100px;
+  gap: 60px;
+}
+form label {
+  color: rgb(78, 78, 78);
+}
+
+form input {
+  margin-top: 5px;
+  /* margin-bottom: 30px; */
+  /* display: block; */
+  width: 100%;
+  padding: 0;
+  height: 50px;
+  border: 2px solid rgb(255, 72, 0);
+  border-radius: 6px;
+}
+button {
+  font-family: Ifood-Regular, sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  /* display: block; */
+  width: 100%;
+  /* margin: 0; */
+  padding: 12px 0;
+  border: 5px solid rgb(234, 29, 44);
+  border-radius: 6px;
+  background: rgb(234, 29, 44);
+}
+
+.problemas-formulario {
+  font-size: 1rem;
+  align-self: end;
+  font-family: Ifood-Bold-2, sans-serif;
+  color: red;
+  /* margin-bottom: 30px; */
+}
+.instrucao-formulario h1 {
+  font-size: 2rem;
+  font-family: Ifood-Bold-2;
+  /* margin-bottom: 10px; */
+  color: rgb(51, 51, 51);
+}
+.instrucao-formulario p {
+  font-size: 1.1rem;
+  color: rgb(78, 78, 78);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+p a {
+  color: red;
+  font-size: 1.1rem;
+}
+.cadastro {
+  align-self: center;
+  margin-bottom: 40px;
+}
+@media (max-width: 765px) {
+  .imagem-main img {
+    display: none;
+  }
+  .main{
+    grid-template-columns: 1fr;
+  }
+  .formulario{
+    margin: 40px;
+    gap: 20px;
+  }
+}
